@@ -39,6 +39,23 @@
 
   <body id="page-top">
 
+    <!-- The Modal (background) -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modalcontent">
+        <div class="modalheader" id="modalheader" >
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modalheadertext">Default Modal Header</h2>
+        </div>
+        <div class="modalbody">
+          <div id="modaltext" class="modaltext">Default content</div>
+        </div>
+        <div class="modalfooter" id="modalfooter">
+          <h3 id="modalfootertext"></h3>
+        </div>
+      </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
@@ -70,7 +87,7 @@
     <!-- Header -->
     <header class="text-white" id="header">
       <div class="container text-center">
-        <h1>Welcome to Joe's Website</h1>
+        <h1>Welcome to Joe's Demo Site</h1>
         <p class="lead">Hello! I am Joe Cui, an emerging full stack web developer.</p>
       </div>
     </header>
@@ -153,28 +170,24 @@
                   </div>
                 </a>
               </div>
-              <div class="row caption slideanim">
-                <div class="col-md-12">
-                  <p>This is an online learning management system (LMS). Please refer to the readme file in the repository shown below.</p>
-                </div>
-              </div>
               <div class="row slideanim">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
+                <div class="col-md-12 extlinks">
                   <a href="https://www.joesdemosite.com/wdv/index.php" title="Website">
                     <span>
                       <i class="fas fa-link"></i>
                     </span>
                   </a>
-                </div>
-                <div class="col-md-4">
                   <a href="https://github.com/XiaozhouCui/WDV" title="Source Code">
                     <span>
                       <i class="fab fa-github"></i>
                     </span>
                   </a>
                 </div>
-                <div class="col-md-2"></div>
+              </div>
+              <div class="row caption slideanim">
+                <div class="col-md-12">
+                  <p>This is an online learning management system (LMS). Please refer to the readme file in the repository shown below.</p>
+                </div>
               </div>
             </div>
             <div class="col-md-4">
@@ -190,28 +203,24 @@
                   </div>
                 </a>
               </div>
-              <div class="row caption slideanim">
-                <div class="col-md-12">
-                  <p>This is the admin page for a book management website. User can add, edit and delete books, while admin can also add, edit and delete user accounts.</p>
-                </div>
-              </div>
               <div class="row slideanim">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
+                <div class="col-md-12 extlinks">
                   <a href="https://www.joesdemosite.com/mybooks/index.php" title="Website">
                     <span>
                       <i class="fas fa-link"></i>
                     </span>
                   </a>
-                </div>
-                <div class="col-md-4">
                   <a href="https://github.com/XiaozhouCui/books" title="Source Code">
                     <span>
                       <i class="fab fa-github"></i>
                     </span>
                   </a>
                 </div>
-                <div class="col-md-2"></div>
+              </div>
+              <div class="row caption slideanim">
+                <div class="col-md-12">
+                  <p>This is the admin page for a book management website. User can add, edit and delete books, while admin can also add, edit and delete user accounts.</p>
+                </div>
               </div>
             </div>
             <div class="col-md-4">
@@ -227,28 +236,24 @@
                   </div>
                 </a>
               </div>
-              <div class="row caption slideanim">
-                <div class="col-md-12">
-                  <p>This is my first project at TAFE, this is a pure HTML/CSS website with 5 static pages, no database connection.</p>
-                </div>
-              </div>
               <div class="row slideanim">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
+                <div class="col-md-12 extlinks">
                   <a href="https://www.joesdemosite.com/spring/Index.html" title="Website">
                     <span>
                       <i class="fas fa-link"></i>
                     </span>
                   </a>
-                </div>
-                <div class="col-md-4">
                   <a href="https://github.com/XiaozhouCui/spring" title="Source Code">
                     <span>
                       <i class="fab fa-github"></i>
                     </span>
                   </a>
                 </div>
-                <div class="col-md-2"></div>
+              </div>
+              <div class="row caption slideanim">
+                <div class="col-md-12">
+                  <p>This is my first project at TAFE, this is a pure HTML/CSS website with 5 static pages, no database connection.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -257,16 +262,17 @@
 
       <section id="contact" class="evens">
         <div class="container">
-          <h2 class="text-center">Contact Me (form under construction)</h2><br>
+          <h2 class="text-center">Contact Me</h2><br>
           <div class="row">
             <div class="col-sm-5 slideanim">
               <p>My contact details:</p>
               <p><span><i class="fas fa-map-marker-alt"></i></span> Sunnybank Hills, QLD 4109</p>
               <p><span><i class="fas fa-phone"></i></span> +61 0452618869</p>
               <p><span ><i class="far fa-envelope"></i></span> joe.cui@outlook.com</p>
+              <p>You can also leave a message in the form and click send.</p>
             </div>
             <div class="col-sm-7">
-              <form action="controller/contact.php" onsubmit="return false" class="needs-validation" method="post" novalidate>
+              <form action="#" onsubmit="return false" id="webform" class="needs-validation" method="post" novalidate>
                 <div class="row slideanim">
                   <div class="col-sm-6 form-group">
                     <label>Name:</label>
@@ -291,7 +297,7 @@
                   </div>
                 </div>
                 <div class="form-group slideanim">
-                  <button class="btn btn-primary float-right" type="submit">Send</button>
+                  <button class="btn btn-primary float-right" onclick="AJAXform()">Send</button>
                 </div>
               </form>
             </div>

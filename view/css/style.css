@@ -38,6 +38,12 @@ section {
   background-color: rgba(234, 241, 255, 0.85)
 }
 
+#skills .fas, #skills .fab {
+  font-size:6em;
+  color:tomato;
+  margin-bottom: 10px;
+}
+
 #contact span i {
   width: 30px;
 
@@ -45,6 +51,11 @@ section {
 
   margin-right: 5px;
   fill: #fff;
+}
+
+.extlinks {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .thumbnail {
@@ -114,14 +125,12 @@ section {
 }
 
 
-
-
-/* ---------------- For Animation on Scroll ---------------- */
+/* ================ For Animation on Scroll ================ */
 .slideanim {
   visibility:hidden;
   visibility:visible\9;/*For old IE browsers IE6-8 */
 }
-.slideanim.slide {visibility: visible; animation:slide 1s;}
+.slideanim.slide {visibility: visible; animation:slide 1.5s;}
 .slideanim::after {
   /* useful when its child elements are float:left; */
   content: "";
@@ -141,8 +150,87 @@ section {
 }
 
 
-#skills .fas, #skills .fab {
-  font-size:6em;
-  color:tomato;
-  margin-bottom: 10px;
+/* ============ The Modal starts here ============= */
+
+/* The Modal background */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
+/* Modal Content */
+.modalcontent {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 40%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 1s;
+	animation-name: animatetop;
+	animation-duration: 1s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modalheader {
+	padding: 16px 16px;
+	background-color: cornflowerblue;
+	color: white;
+}
+
+.modalbody {
+	padding: 22px 16px;
+}
+
+.modaltext {
+	font-size: 1.2em;
+	min-height: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
+}
+
+.modalfooter {
+	padding: 20px 16px;
+	background-color: cornflowerblue;
+	color: white;
+}
+
+/* ============== The Modal ends here ============== */

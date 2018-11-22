@@ -16,3 +16,76 @@
   }, false);
 })();
 
+
+// The modal js starts
+
+function showModal() {
+  resetModal();
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {  
+  document.getElementById('myModal').style.display = "none";
+}
+
+function resetModal() {
+  document.getElementById('modaltext').innerHTML = "Content";
+  document.getElementById('modalheadertext').innerHTML = "Modal Header";
+  document.getElementById('modalheader').style.backgroundColor = "cornflowerblue;";
+  document.getElementById('modalfooter').style.backgroundColor = "cornflowerblue;";
+}
+
+function modalSuccess() {
+  resetModal();
+  document.getElementById('myModal').style.display = "block";
+  document.getElementById('modalheadertext').innerHTML = "DONE";
+  document.getElementById('modalheader').style.backgroundColor = "green";
+  document.getElementById('modalfooter').style.backgroundColor = "green";
+}
+
+function modalError() {
+  resetModal();
+  document.getElementById('myModal').style.display = "block";
+  document.getElementById('modalheadertext').innerHTML = "ERROR";
+  document.getElementById('modalheader').style.backgroundColor = "red";
+  document.getElementById('modalfooter').style.backgroundColor = "red";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  var modal = document.getElementById('myModal');
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+function modalSubmit() {
+  showModal();
+  document.getElementById('modalheadertext').innerHTML = "SUCCESS";
+  document.getElementById('modaltext').innerHTML = "<p class='col-md-12'>Your message has been sent successfully. Thank you, I will contact you shortly.</p><button class='btn btn-secondary btn-lg' onclick='closeModal()'>OK</button>";
+}
+
+function AJAXform() {
+  var pubURL = "controller/contact.php";
+  $.ajax({
+    url: pubURL,
+    method: 'post',
+    data: $('#webform').serialize(),
+    datatype: 'json',
+    success: function(data) {
+      if(data.status == 'success') {
+        modalSuccess();
+        document.getElementById('modaltext').innerHTML = "<p class='col-md-12'> Thanks you "+ data.name +", your message has been sent successfully. I will contact you shortly.</p><button class='btn btn-secondary btn-lg' onclick='closeModal()'>OK</button>";
+      } 
+      if (data.status == 'error') {
+        modalError();
+        document.getElementById('modaltext').innerHTML = "<p class='col-md-12'>Sorry, your message can not be sent, please contact me directly.</p><button class='btn btn-secondary btn-lg' onclick='closeModal()'>OK</button>";
+      }
+    },
+    error: function(err) {
+      console.log(err);
+    }
+  });
+}
+
+//The modal js ends
