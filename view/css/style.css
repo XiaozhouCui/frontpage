@@ -4,6 +4,15 @@ header {
   background-color: tomato;
 }
 
+nav {
+  font-size: 1.3em;
+}
+
+nav i {
+  font-size: 2.5em;
+  color: tomato;
+}
+
 #content {
   background-image: url(../images/background.jpg);
   background-size: cover;
@@ -21,11 +30,11 @@ section {
   padding: 150px 0;
 }
 
-.evens {
+.odds {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
-.odds {
+.evens {
   background-color: rgba(234, 241, 255, 0.85)
 }
 
@@ -39,18 +48,55 @@ section {
 }
 
 .thumbnail {
-  padding: 0 0 15px 0;
+  position: relative;
   border: none;
   border-radius: 0;
 }
 .thumbnail img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 15px;
 }
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 99, 71, 0.8);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.overlay .fas {
+  font-size: 2em;
+}
+
+.thumbnail a:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+
 
 .caption {
   min-height: 8em;
+  text-align: justify;
 }
 
 .btn {
@@ -60,7 +106,7 @@ section {
 #projects span {
   font-size: 3em;
   color: black;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 #projects span:hover {
