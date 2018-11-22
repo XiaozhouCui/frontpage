@@ -66,20 +66,24 @@ function modalSubmit() {
 }
 
 function AJAXform() {
-  var pubURL = "controller/contact.php";
+  var formURL = "controller/contact.php";
   $.ajax({
-    url: pubURL,
+    url: formURL,
     method: 'post',
     data: $('#webform').serialize(),
     datatype: 'json',
     success: function(data) {
       if(data.status == 'success') {
         modalSuccess();
-        document.getElementById('modaltext').innerHTML = "<p class='col-md-12'> Thanks you "+ data.name +", your message has been sent successfully. I will contact you shortly.</p><button class='btn btn-secondary btn-lg' onclick='closeModal()'>OK</button>";
+        document.getElementById('modaltext').innerHTML = "<p class='col-md-12'> Thank you "+ data.name +", your message has been sent successfully. I will contact you shortly.</p><button class='btn btn-secondary btn-lg' onclick='closeModal()'>OK</button>";
       } 
       if (data.status == 'error') {
         modalError();
         document.getElementById('modaltext').innerHTML = "<p class='col-md-12'>Sorry, your message can not be sent, please contact me directly.</p><button class='btn btn-secondary btn-lg' onclick='closeModal()'>OK</button>";
+      }
+      if (data.status == 'empty') {
+        modalError();
+        document.getElementById('modaltext').innerHTML = "<p class='col-md-12'>Please fill all the input fields in the form.</p><button class='btn btn-secondary btn-lg' onclick='closeModal()'>OK</button>";
       }
     },
     error: function(err) {
