@@ -1,7 +1,11 @@
 
 #header {
-  padding: 180px 0 100px 0;
+  padding: 180px 0 90px 0;
   background-color: tomato;
+}
+
+#hi {
+  font-size: 4em;
 }
 
 nav {
@@ -36,6 +40,38 @@ section {
 
 .evens {
   background-color: rgba(234, 241, 255, 0.85)
+}
+
+/*========= About ==========*/
+#profile {
+  width: 230px;
+  height: 230px;
+  margin: 40px auto;
+  background-image:url(../images/profile.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius:150px;
+}
+
+#profile:hover {    
+  position: relative;
+  animation: enlarge;
+  animation-duration:2s;
+  animation-iteration-count: 1;
+  animation-delay: 0;
+  animation-fill-mode:forwards;
+}
+
+@keyframes enlarge {
+  0%{left:0px; top:0px;} 
+  10%{left:0px; top:-20px;} 
+  30%{left:0px; top:0px;} 
+  30%{transform: scale(1,1);border-radius:150px;}
+  100%{transform: scale(1.3,1.3);border-radius:10px;}
+}
+
+#statement {
+  text-align: justify
 }
 
 #skills .fas, #skills .fab {
