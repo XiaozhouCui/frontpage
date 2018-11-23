@@ -15,11 +15,18 @@ nav {
 nav i {
   font-size: 2em;
   color: tomato;
-  transition: 0.5s;
 }
 
 nav i:hover {
-  color: lightgray;
+  position: relative;
+  animation: logo;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes logo {
+  0%{transform: scale(1,1); color:tomato;}
+  100%{transform: scale(1.3,1.3); color:lightgray;}
 }
 
 #content {
@@ -160,6 +167,12 @@ section {
   color: tomato;
 }
 
+#map {
+  border:2px solid cornflowerblue;
+  border-radius: 15px;
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+ }
 
 /* ================ For Animation on Scroll ================ */
 .slideanim {

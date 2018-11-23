@@ -35,6 +35,21 @@
       gtag('config', 'UA-129344631-1');
     </script>
 
+    <script>
+    // Initialize and add the map
+    function initMap() {
+      var home = {lat: -27.5877, lng: 153.0607};
+      var map1 = new google.maps.Map(
+          document.getElementById('map'), {zoom: 12, center: home});
+      var marker = new google.maps.Marker({position: home, map: map1});
+    }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFGd8DosO5qcow8V_cCAAP6SzypjyuqhU&callback=initMap">
+    </script>
+
+
   </head>
 
   <body id="page-top">
@@ -88,7 +103,7 @@
     <header class="text-white" id="header">
       <div class="container text-center">
         <h1 id="hi">Hi! I am Joe Cui</h1>
-        <p class="lead">An emerging full-stack web developer.</p>
+        <p class="lead">An emerging full-stack web developer</p>
       </div>
     </header>
 
@@ -272,7 +287,7 @@
             <div class="col-sm-5 slideanim">
               <p>My contact details:</p>
               <p><span><i class="fas fa-map-marker-alt"></i></span> Sunnybank Hills, QLD 4109</p>
-              <p><span><i class="fas fa-phone"></i></span> +61 0452618869</p>
+              <p><span><i class="fas fa-phone"></i></span> (+61) 0452618869</p>
               <p><span ><i class="far fa-envelope"></i></span> joe.cui@outlook.com</p>
               <p>You can also leave a message in the form and click 'send' button.</p>
             </div>
@@ -307,6 +322,14 @@
               </form>
             </div>
           </div>
+
+          <!-- Google Map -->
+          <div class="row">
+              <div class="col-md-12 slideanim">
+                <div id="map"></div>
+              </div>
+          </div>
+
         </div>
       </section>
     </div>
