@@ -46,7 +46,7 @@ section {
 }
 
 .evens {
-  background-color: rgba(234, 241, 255, 0.85)
+  background-color: rgba(230, 230, 230, 0.85)
 }
 
 /*========= About ==========*/
@@ -173,6 +173,25 @@ section {
   height: 400px;  /* The height is 400 pixels */
   width: 100%;  /* The width is the width of the web page */
  }
+
+#totop {
+  font-size: 3em; 
+  color: Tomato
+}
+
+#totop:hover {    
+  position: relative;
+  animation: up;
+  animation-duration:0.5s;
+  animation-iteration-count:infinite;
+  animation-delay: 0;
+}
+
+@keyframes up {
+  0% {top:0px;} 
+  80% {top:-6px}
+  100% {top:0px;} 
+}
 
 /* ================ For Animation on Scroll ================ */
 .slideanim {
