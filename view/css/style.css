@@ -50,6 +50,21 @@ section {
 }
 
 /*========= About ==========*/
+#about i{
+  font-size: 3.5em;
+  color: black;
+  transition: 0.5s;
+}
+
+#about i:hover{
+  color: tomato;
+}
+
+#about a:hover {
+  text-decoration: none;
+}
+
+
 #profile {
   width: 230px;
   height: 230px;
