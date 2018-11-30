@@ -59,14 +59,11 @@ window.onclick = function(event) {
   }
 }
 
-function modalSubmit() {
-  showModal();
-  document.getElementById('modalheadertext').innerHTML = "SUCCESS";
-  document.getElementById('modaltext').innerHTML = "<p class='col-md-12'>Your message has been sent successfully. Thank you, I will contact you shortly.</p><button class='btn btn-secondary btn-lg' onclick='closeModal()'>OK</button>";
-}
+//The modal js ends
+
 
 function AJAXform() {
-  var formURL = "controller/contact.php";
+  var formURL = "controller/mail.php";
   $.ajax({
     url: formURL,
     method: 'post',
@@ -92,4 +89,3 @@ function AJAXform() {
   });
 }
 
-//The modal js ends
