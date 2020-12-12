@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Portfolio">
-    <meta name="author" content="Joe Cui">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Portfolio" />
+    <meta name="author" content="Joe Cui" />
 
     <title>Joe's Portfolio</title>
 
     <!-- Custom styles for this page -->
-    <link href="view/css/style.css" rel="stylesheet">
-    
+    <link href="view/css/style.css" rel="stylesheet" />
+
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
 
     <!-- Link to Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
 
     <!-- Custom JavaScript for this page -->
     <script src="view/js/script.js"></script>
@@ -29,35 +27,35 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129344631-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-129344631-1');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-129344631-1");
     </script>
 
     <!-- Google Map JS -->
     <script>
-    function initMap() {
-      var home = {lat: -27.5877, lng: 153.0607};
-      var map1 = new google.maps.Map(
-          document.getElementById('map'), {zoom: 12, center: home});
-      var marker = new google.maps.Marker({position: home, map: map1});
-    }
+      function initMap() {
+        var home = { lat: -27.5877, lng: 153.0607 };
+        var map1 = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: home,
+        });
+        var marker = new google.maps.Marker({ position: home, map: map1 });
+      }
     </script>
 
     <!-- Google Map API -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFGd8DosO5qcow8V_cCAAP6SzypjyuqhU&callback=initMap">
-    </script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFGd8DosO5qcow8V_cCAAP6SzypjyuqhU&callback=initMap"></script>
   </head>
 
   <body id="page-top">
-
     <!-- The Modal (background) -->
     <div id="myModal" class="modal">
       <!-- Modal content -->
       <div class="modalcontent">
-        <div class="modalheader" id="modalheader" >
+        <div class="modalheader" id="modalheader">
           <span class="close" onclick="closeModal()">&times;</span>
           <h2 id="modalheadertext">Default Modal Header</h2>
         </div>
@@ -102,36 +100,38 @@
     <header class="text-white" id="header">
       <div class="container text-center">
         <h1 id="hi">Hi! I am Joe Cui</h1>
-        <p class="lead">An emerging full-stack web developer</p>
+        <p class="lead">An experienced full-stack web developer</p>
       </div>
     </header>
 
     <!-- Content -->
     <div id="content">
-
       <section id="about" class="odds">
         <div class="container">
-          <h2 class="text-center">About Me</h2><br>
+          <h2 class="text-center">About Me</h2>
+          <br />
           <div class="row slideanim">
             <div class="col-md-3">
               <div id="profile"></div>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-8">
-              <p id="statement">
-                I am a career changer with more than 8 years of experience working as a professional engineer. I recently completed my Diploma of Website Development at TAFE Queensland and attended a coding bootcamp to work on commercial projects.
-              </p>
-              <p><strong>My Skills:</strong></p>
+              <p id="statement">I have more than 2 years of experience working as a full-stack web developer. My recent projects mainly focus on the MERN stack; my previous experience covers traditional LAMP stack. I am also familiar with Angular, C# and python.</p>
+              <p><strong>High lights:</strong></p>
               <ul>
-                <li>Front end development: HTML, CSS, SASS, Javascript, jQuery, Webpack, AJAX and JSON.</li>
-                <li>Back end development: PHP, MySQL, Node.js and MongoDB.</li>
-                <li>Version control using Git: GitHub and Bitbucket.</li>
-                <li>Agile project experience: Jira + Bitbucket + Slack.</li>
-                <li>Clean code and clear MVC structure.</li>
-                <li>Experience with CMS: Drupal and Wordpress.</li>
+                <li>Front end development: SPA with React and Angular.</li>
+                <li>Back end development: REST API with Node.js (Express) and PHP.</li>
+                <li>Database: MongoDb, SQL Server and MySQL.</li>
+                <li>Version control: Git, GitHub and Bitbucket.</li>
+                <li>Agile project experience: Jira + Bitbucket + Teams/Slack.</li>
+                <li>Object oriented programming: TypeScript, C# and PHP.</li>
+                <li>AWS: EC2, S3, Elastic Beanstalk and many other services.</li>
+                <li>Eager to learn new technologies, always keep my knowledge up to date.</li>
+                <li>Can quickly learn a new languange or framework within 2 weeks.</li>
               </ul>
             </div>
-          </div><br>
+          </div>
+          <br />
           <div class="row slideanim text-center">
             <div class="col-md-3">
               <a class="btn btn-lg btn-primary" href="view/files/Joe - Web Developer.docx" download>Download Resume</a>
@@ -155,42 +155,43 @@
 
       <section id="skills" class="evens">
         <div class="container">
-          <h2 class="text-center">Skills</h2><br>
+          <h2 class="text-center">Skills</h2>
+          <br />
           <div class="row text-center slideanim">
-            <div class="col-md-3">                
-              <i class="fab fa-html5"></i>
-              <h4>HTML</h4>
+            <div class="col-md-3">
+              <i class="fab fa-react"></i>
+              <h4>React</h4>
             </div>
             <div class="col-md-3">
-              <i class="fab fa-css3-alt"></i>
-              <h4>CSS</h4>
+              <i class="fab fa-angular"></i>
+              <h4>Angular</h4>
+            </div>
+            <div class="col-md-3">
+              <i class="fab fa-python"></i>
+              <h4>Python</h4>
             </div>
             <div class="col-md-3">
               <i class="fab fa-sass"></i>
               <h4>SASS</h4>
             </div>
-            <div class="col-md-3">
-              <i class="fab fa-js-square"></i>
-              <h4>JavaScript</h4>
-            </div>
           </div>
-          <br><br>
+          <br /><br />
           <div class="row text-center slideanim">
             <div class="col-md-3">
-              <i class="fab fa-php"></i>    
-              <h4>PHP</h4>
-            </div>
-            <div class="col-md-3">
-              <i class="fab fa-node"></i>    
+              <i class="fab fa-node"></i>
               <h4>Node.js</h4>
             </div>
             <div class="col-md-3">
               <i class="fas fa-database"></i>
-              <h4>MySQL & MongoDB</h4>
+              <h4>SQL & MongoDB</h4>
             </div>
             <div class="col-md-3">
-              <i class="fab fa-drupal"></i>
-              <h4>CMS</h4>
+              <i class="fab fa-php"></i>
+              <h4>PHP</h4>
+            </div>
+            <div class="col-md-3">
+              <i class="fab fa-aws"></i>
+              <h4>AWS</h4>
             </div>
           </div>
         </div>
@@ -198,17 +199,18 @@
 
       <section id="projects" class="odds">
         <div class="container">
-          <h2 class="text-center">My Recent Projects</h2><br>
+          <h2 class="text-center">My Recent Projects</h2>
+          <br />
           <div class="row text-center">
             <div class="col-md-4">
               <h4>JR Talent</h4>
               <div class="row thumbnail slideanim">
                 <a href="http://jrtalent.com.au/">
-                  <img src="view/images/5.jpg" alt="Talent">
+                  <img src="view/images/5.jpg" alt="Talent" />
                   <div class="overlay">
                     <div class="text">
                       <i class="fas fa-external-link-square-alt"></i>
-                      <br>external link
+                      <br />external link
                     </div>
                   </div>
                 </a>
@@ -229,7 +231,7 @@
               </div>
               <div class="row caption slideanim">
                 <div class="col-md-12">
-                  <p>I was a team member of this Agile project. This large job-search site is built with Webpack, PUG, SASS, Node.js and MongoDB. I was assigned several tasks varied from designing search bars to building employers database.</p>
+                  <p>I was a team member of this Agile project. This large job-search site is built with Node.js, Koa, MongoDB, PUG, and SASS. I was assigned several tasks varied from designing search bars to building employers database.</p>
                 </div>
               </div>
             </div>
@@ -237,11 +239,11 @@
               <h4>SafeTec Pacific</h4>
               <div class="row thumbnail slideanim">
                 <a href="https://www.joesdemosite.com/wdv/index.php">
-                  <img src="view/images/1.jpg" alt="SafeTec">
+                  <img src="view/images/1.jpg" alt="SafeTec" />
                   <div class="overlay">
                     <div class="text">
                       <i class="fas fa-external-link-square-alt"></i>
-                      <br>external link
+                      <br />external link
                     </div>
                   </div>
                 </a>
@@ -273,13 +275,13 @@
             </div>
             <div class="col-md-4">
               <h4>My Books</h4>
-              <div class="row thumbnail slideanim">          
+              <div class="row thumbnail slideanim">
                 <a href="https://www.joesdemosite.com/mybooks/index.php">
-                  <img src="view/images/2.jpeg" alt="MyBooks">
+                  <img src="view/images/2.jpeg" alt="MyBooks" />
                   <div class="overlay">
                     <div class="text">
                       <i class="fas fa-external-link-square-alt"></i>
-                      <br>external link
+                      <br />external link
                     </div>
                   </div>
                 </a>
@@ -310,11 +312,11 @@
               <h4>CHI Travel</h4>
               <div class="row thumbnail slideanim">
                 <a href="https://www.joesdemosite.com/chitravel/index.html">
-                  <img src="view/images/4.jpeg" alt="Travel">
+                  <img src="view/images/4.jpeg" alt="Travel" />
                   <div class="overlay">
                     <div class="text">
                       <i class="fas fa-external-link-square-alt"></i>
-                      <br>external link
+                      <br />external link
                     </div>
                   </div>
                 </a>
@@ -343,11 +345,11 @@
               <h4>Spring Escapes</h4>
               <div class="row thumbnail slideanim">
                 <a href="https://www.joesdemosite.com/spring/Index.html">
-                  <img src="view/images/3.jpeg" alt="Spring">
+                  <img src="view/images/3.jpeg" alt="Spring" />
                   <div class="overlay">
                     <div class="text">
                       <i class="fas fa-external-link-square-alt"></i>
-                      <br>external link
+                      <br />external link
                     </div>
                   </div>
                 </a>
@@ -373,19 +375,26 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
       <section id="contact" class="evens">
         <div class="container">
-          <h2 class="text-center">Contact Me</h2><br>
+          <h2 class="text-center">Contact Me</h2>
+          <br />
           <div class="row">
             <div class="col-sm-5 slideanim">
               <p>My contact details:</p>
-              <p><span><i class="fas fa-map-marker-alt"></i></span> Sunnybank Hills, QLD 4109</p>
-              <p><span><i class="fas fa-phone"></i></span> (+61) 0452618869</p>
-              <p><span ><i class="far fa-envelope"></i></span> info@joesdemosite.com</p>
+              <p>
+                <span><i class="fas fa-map-marker-alt"></i></span> Sunnybank Hills, QLD 4109
+              </p>
+              <p>
+                <span><i class="fas fa-phone"></i></span> (+61) 0452618869
+              </p>
+              <p>
+                <span><i class="far fa-envelope"></i></span>
+                info@joesdemosite.com
+              </p>
               <p>You can also leave a message in the form and click 'send' button.</p>
             </div>
             <div class="col-sm-7">
@@ -393,25 +402,19 @@
                 <div class="row slideanim">
                   <div class="col-sm-6 form-group">
                     <label>Name:</label>
-                    <input class="form-control" id="name" name="name" type="text" pattern="[A-Za-z ]+" required>
-                    <div class="invalid-feedback">
-                      Please provide a valid name.
-                    </div>
+                    <input class="form-control" id="name" name="name" type="text" pattern="[A-Za-z ]+" required />
+                    <div class="invalid-feedback">Please provide a valid name.</div>
                   </div>
                   <div class="col-sm-6 form-group">
                     <label>Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" type="email" required>
-                    <div class="invalid-feedback">
-                      Please provide a valid email address.
-                    </div>
+                    <input type="email" class="form-control" id="email" name="email" type="email" required />
+                    <div class="invalid-feedback">Please provide a valid email address.</div>
                   </div>
                 </div>
                 <div class="form-group slideanim">
                   <label>Message:</label>
                   <textarea class="form-control" id="comments" name="message" rows="5" required></textarea>
-                  <div class="invalid-feedback">
-                    Please leave a message.
-                  </div>
+                  <div class="invalid-feedback">Please leave a message.</div>
                 </div>
                 <div class="form-group slideanim">
                   <button class="btn btn-primary float-right" onclick="AJAXform()">Send</button>
@@ -422,11 +425,10 @@
 
           <!-- Google Map -->
           <div class="row">
-              <div class="col-md-12 slideanim">
-                <div id="map"></div>
-              </div>
+            <div class="col-md-12 slideanim">
+              <div id="map"></div>
+            </div>
           </div>
-
         </div>
       </section>
     </div>
@@ -453,7 +455,5 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="view/js/scrolling-nav.js"></script>
-
   </body>
-
 </html>
