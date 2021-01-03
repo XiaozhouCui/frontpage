@@ -1,0 +1,80 @@
+[
+  {
+    "title": "ProShop eCommerce",
+    "image": "proshop.jpg",
+    "link": "https://proshop888.herokuapp.com/",
+    "repo": "https://github.com/XiaozhouCui/proshop",
+    "description": "This eCommerce website is built with MongoDB, Express, React, Node.js (MERN) and Redux. Deployed on Heroku, it has full featured shopping cart, product reviews and rating, admin dashboard, PayPal integration etc. Check <a target=\"_blank\" href=\"https://github.com/XiaozhouCui/proshop/blob/master/readme.md\">Readme</a> on GitHub."
+  },
+  {
+    "title": "Next.js and Apollo - Portfolio",
+    "image": "portfolio.jpg",
+    "link": "https://next-gql-portfolio.herokuapp.com/",
+    "repo": "https://github.com/XiaozhouCui/nextjs-portfolio",
+    "description": "This full stack web app will be my new portfolio site. On the frontend, Next.js is used to carry out SSR and SSG, replacing the conventional SPA. On the backend, Apollo is integrated into Node/Express as a middleware, replacing traditional REST API with GraphQL."
+  },
+  {
+    "title": "Natours",
+    "image": "emailclient.jpg",
+    "link": "https://proshop888.herokuapp.com/",
+    "repo": "https://github.com/XiaozhouCui/natours",
+    "description": "Deployed on AWS Elastic Beanstalk. This tourism booking website is a MVC backend application using SSR to call its own REST APIs. Apart from a deep dive into Node.js, Express and MongoDB, it also covers web security, Stripe payment, geo-spatial data and much more."
+  },
+  {
+    "title": "Email Client",
+    "image": "emailclient.jpg",
+    "link": "https://emailclient-peach.vercel.app/",
+    "repo": "https://github.com/XiaozhouCui/emailclient",
+    "description": "This Angular project provides the user interface of an email client. By calling 3rd party API endpoints, you can register new accounts and login. Once authenticated, you can send, receive and reply emails using your newly registered email address."
+  },
+  {
+    "title": "Vidly",
+    "image": "vidly.jpg",
+    "link": "https://vidly-sooty.vercel.app/",
+    "repo": "https://github.com/XiaozhouCui/vidly",
+    "repo-b": "https://github.com/XiaozhouCui/vidly-node",
+    "description": "This video rental app is a decoupled frontend and backend project. Frontend was built with React and deployed on Vercel; backend was built with Node.js, Express and MongoDB, and was deployed on Heroku."
+  },
+  {
+    "title": "Jammming",
+    "image": "jammming.jpg",
+    "link": "https://www.joesdemosite.com/jammming/",
+    "repo": "https://github.com/XiaozhouCui/jammming",
+    "description": "This is a single page music application built with React. It can log you into your Spotify account by calling its API. You can sarch the Spotify library, create a custom playlist, and then save the playlist to your Spotify account"
+  },
+  {
+    "title": "JR Academy Official Website",
+    "image": "jr.jpg",
+    "link": "https://jiangren.com.au/",
+    "repo": "",
+    "description": "This Chinese version landing page was built with Keystone, MongoDB and PUG. Its user dashboard was built with React and Redux. My duty as an agile team member was to add new features to the dashboard user interface."
+  },
+  {
+    "title": "JR Talent",
+    "image": "jrtalent.jpg",
+    "link": "http://jrtalent.com.au/",
+    "repo": "",
+    "description": "I was a team member of this Agile project. This large job-search site is built with Node.js, Koa, MongoDB, PUG, and SASS. I was assigned several tasks varied from designing search bars to building employers database."
+  },
+  {
+    "title": "Swim School",
+    "image": "swimschool.jpg",
+    "link": "https://www.joesdemosite.com/swimschool/index.html#homepage",
+    "repo": "https://github.com/XiaozhouCui/swimschool",
+    "description": "This LAMP web app provides an online booking system for a swim school for babies. Its backend was built into REST APIs using plain PHP, while the frontend SPA uses vanilla JavaScript to call the API and render the contents."
+  },
+  {
+    "title": "My Books",
+    "image": "books.jpg",
+    "link": "https://www.joesdemosite.com/mybooks/index.php",
+    "repo": "https://github.com/XiaozhouCui/books",
+    "description": "This is the admin page for a book management website. Based on MySQL, admin can add, edit and delete books as well as other users."
+  },
+  {
+    "title": "SafeTec Pacific",
+    "image": "safetec.jpg",
+    "link": "https://www.joesdemosite.com/wdv/index.php",
+    "repo": "https://github.com/XiaozhouCui/WDV",
+    "description": "This MySQL based learning management system (LMS) is built from scratch with PHP and AJAX. For functionalities please refer to the readme file in my GitHub repository."
+  }
+]
