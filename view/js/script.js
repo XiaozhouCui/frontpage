@@ -100,40 +100,28 @@ var place_holder = document.getElementById("myprojects");
 fetch("view/js/projects.json")
   .then(response => response.json())
   .then(projects => {
-    place_holder.innerHTML = null;
+    // place_holder.innerHTML = null;
     projects.map(p => {
       var card = document.createElement("div");
-      card.classList.add("col-md-4");
+      card.className += "col-md-4 slideanim";
       card.innerHTML = `
-        <h4>${p.title}</h4>
-        <div class="row thumbnail slideanim">
+        <div class="card my-3">
           <a target="_blank" href="${p.link}">
-            <img src="view/images/${p.image}" alt="${p.title}" />
-            <div class="overlay">
-              <div class="text">
-                <i class="fas fa-external-link-square-alt"></i>
-                <br />external link
-              </div>
-            </div>
+            <img src="view/images/${p.image}" class="card-img-top" alt="${p.title}" />
           </a>
-        </div>
-        <div class="row slideanim">
-          <div class="col-md-12 extlinks">
-            <a target="_blank" href="${p.link}" title="Webpage">
-              <span>
-                <i class="fas fa-link"></i>
-              </span>
-            </a>
-            <a target="_blank" href="${p.repo}" title="Source Code">
-              <span>
-                <i class="fab fa-github"></i>
-              </span>
-            </a>
+          <div class="card-body">
+            <h5 class="card-title">${p.title}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">${p.subtitle}</h6>
+            <hr/>
+            <p class="card-text text-justify">${p.description}</p>
           </div>
-        </div>
-        <div class="row caption slideanim">
-          <div class="col-md-12">
-            <p>${p.description}</p>
+          <div class="list-group list-group-flush">
+            <div class="list-group-item text-center">
+              <a target="_blank" href="${p.link}" class="card-link"><i class="fas fa-2x fa-link"></i></a>
+              ${p.repo ? `<a target="_blank" href="${p.repo}" class="card-link"><i class="fab fa-2x fa-github"></i></a>` : ""}
+              ${p["repo-b"] ? `<a target="_blank" href="${p["repo-b"]}" class="card-link"><i class="fab fa-2x fa-github"></i></a>` : ""}
+              ${p.docker ? `<a target="_blank" href="#" class="card-link"><i class="fab fa-2x fa-docker"></i></a>` : ""}
+            </div>
           </div>
         </div>
       `;

@@ -1,27 +1,31 @@
 [
   {
-    "title": "ProShop eCommerce",
-    "image": "proshop.jpg",
-    "link": "https://proshop888.herokuapp.com/",
-    "repo": "https://github.com/XiaozhouCui/proshop",
-    "description": "This eCommerce website is built with MongoDB, Express, React, Node.js (MERN) and Redux. Deployed on Heroku, it has full featured shopping cart, product reviews and rating, admin dashboard, PayPal integration etc. Check <a target=\"_blank\" href=\"https://github.com/XiaozhouCui/proshop/blob/master/readme.md\">Readme</a> on GitHub."
-  },
-  {
-    "title": "Next.js and Apollo - Portfolio",
+    "title": "My Portfolio",
+    "subtitle": "Next.js, Apollo, GraphQL, MERN",
     "image": "portfolio.jpg",
     "link": "https://next-gql-portfolio.herokuapp.com/",
     "repo": "https://github.com/XiaozhouCui/nextjs-portfolio",
     "description": "This full stack web app will be my new portfolio site. On the frontend, Next.js is used to carry out SSR and SSG, replacing the conventional SPA. On the backend, Apollo is integrated into Node/Express as a middleware, replacing traditional REST API with GraphQL."
   },
   {
+    "title": "ProShop eCommerce",
+    "subtitle": "MERN stacks and Redux",
+    "image": "proshop.jpg",
+    "link": "https://proshop888.herokuapp.com/",
+    "repo": "https://github.com/XiaozhouCui/proshop",
+    "description": "This eCommerce website is built with MongoDB, Express, React, Node.js (MERN) and Redux. Deployed on Heroku, it has full featured shopping cart, product reviews and rating, admin dashboard, PayPal integration etc. Check <a target=\"_blank\" href=\"https://github.com/XiaozhouCui/proshop/blob/master/readme.md\">Readme</a> on GitHub."
+  },
+  {
     "title": "Natours",
-    "image": "emailclient.jpg",
+    "subtitle": "Node, Express, MongoDB, pug, MVC",
+    "image": "natours.jpg",
     "link": "https://proshop888.herokuapp.com/",
     "repo": "https://github.com/XiaozhouCui/natours",
     "description": "Deployed on AWS Elastic Beanstalk. This tourism booking website is a MVC backend application using SSR to call its own REST APIs. Apart from a deep dive into Node.js, Express and MongoDB, it also covers web security, Stripe payment, geo-spatial data and much more."
   },
   {
     "title": "Email Client",
+    "subtitle": "Angular, TypeScript, RxJs, Services + DI",
     "image": "emailclient.jpg",
     "link": "https://emailclient-peach.vercel.app/",
     "repo": "https://github.com/XiaozhouCui/emailclient",
@@ -29,6 +33,7 @@
   },
   {
     "title": "Vidly",
+    "subtitle": "MERN stacks",
     "image": "vidly.jpg",
     "link": "https://vidly-sooty.vercel.app/",
     "repo": "https://github.com/XiaozhouCui/vidly",
@@ -37,6 +42,7 @@
   },
   {
     "title": "Jammming",
+    "subtitle": "React, Spotify API",
     "image": "jammming.jpg",
     "link": "https://www.joesdemosite.com/jammming/",
     "repo": "https://github.com/XiaozhouCui/jammming",
@@ -44,6 +50,7 @@
   },
   {
     "title": "JR Academy Official Website",
+    "subtitle": "MERN stacks",
     "image": "jr.jpg",
     "link": "https://jiangren.com.au/",
     "repo": "",
@@ -51,6 +58,7 @@
   },
   {
     "title": "JR Talent",
+    "subtitle": "MERN stacks",
     "image": "jrtalent.jpg",
     "link": "http://jrtalent.com.au/",
     "repo": "",
@@ -58,6 +66,7 @@
   },
   {
     "title": "Swim School",
+    "subtitle": "PHP API, HTML + CSS + JavaScript",
     "image": "swimschool.jpg",
     "link": "https://www.joesdemosite.com/swimschool/index.html#homepage",
     "repo": "https://github.com/XiaozhouCui/swimschool",
@@ -65,6 +74,7 @@
   },
   {
     "title": "My Books",
+    "subtitle": "PHP MVC",
     "image": "books.jpg",
     "link": "https://www.joesdemosite.com/mybooks/index.php",
     "repo": "https://github.com/XiaozhouCui/books",
@@ -72,6 +82,7 @@
   },
   {
     "title": "SafeTec Pacific",
+    "subtitle": "PHP MVC",
     "image": "safetec.jpg",
     "link": "https://www.joesdemosite.com/wdv/index.php",
     "repo": "https://github.com/XiaozhouCui/WDV",
