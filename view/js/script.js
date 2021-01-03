@@ -96,4 +96,50 @@ function AJAXform() {
 }
 
 // Load project data
-
+var place_holder = document.getElementById("myprojects");
+fetch("view/js/projects.json")
+  .then(response => response.json())
+  .then(projects => {
+    place_holder.innerHTML = null;
+    projects.map(p => {
+      var card = document.createElement("div");
+      card.classList.add("col-md-4");
+      card.innerHTML = `
+        <h4>${p.title}</h4>
+        <div class="row thumbnail slideanim">
+          <a target="_blank" href="${p.link}">
+            <img src="view/images/${p.image}" alt="${p.title}" />
+            <div class="overlay">
+              <div class="text">
+                <i class="fas fa-external-link-square-alt"></i>
+                <br />external link
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="row slideanim">
+          <div class="col-md-12 extlinks">
+            <a target="_blank" href="${p.link}" title="Webpage">
+              <span>
+                <i class="fas fa-link"></i>
+              </span>
+            </a>
+            <a target="_blank" href="${p.repo}" title="Source Code">
+              <span>
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="row caption slideanim">
+          <div class="col-md-12">
+            <p>${p.description}</p>
+          </div>
+        </div>
+      `;
+      place_holder.appendChild(card);
+    });
+  })
+  .catch(err => {
+    console.log(err);
+  });
