@@ -5,7 +5,7 @@
     "image": "portfolio.jpg",
     "link": "https://next-gql-portfolio.herokuapp.com/",
     "repo": "https://github.com/XiaozhouCui/nextjs-portfolio",
-    "description": "This full stack web app will be my new portfolio site. On the frontend, Next.js is used to carry out SSR and SSG, replacing the conventional SPA. On the backend, Apollo is integrated into Node/Express as a middleware, replacing traditional REST API with GraphQL."
+    "description": "This full stack web app will be my new portfolio site. You can login and leave a message in a forum, and reply to other user's message. Next.js is used for SSR and SSG. Apollo is used to handle GraphQL queries on frontend and backend."
   },
   {
     "title": "ProShop eCommerce",
@@ -13,15 +13,15 @@
     "image": "proshop.jpg",
     "link": "https://proshop888.herokuapp.com/",
     "repo": "https://github.com/XiaozhouCui/proshop",
-    "description": "This eCommerce website is built with MongoDB, Express, React, Node.js (MERN) and Redux. Deployed on Heroku, it has full featured shopping cart, product reviews and rating, admin dashboard, PayPal integration etc. Check <a target=\"_blank\" href=\"https://github.com/XiaozhouCui/proshop/blob/master/readme.md\">Readme</a> on GitHub."
+    "description": "A customized eCommerce web app. It has full featured shopping cart, product reviews and rating, PayPal / credit card integration,  user profile with orders, admin dashboard and image upload. Check <a target=\"_blank\" href=\"https://github.com/XiaozhouCui/proshop/blob/master/readme.md\">Readme</a> on GitHub."
   },
   {
     "title": "Natours",
     "subtitle": "Node, Express, MongoDB, pug, MVC",
     "image": "natours.jpg",
-    "link": "https://proshop888.herokuapp.com/",
+    "link": "http://natours-env.eba-nf9b3ubt.ap-southeast-2.elasticbeanstalk.com/",
     "repo": "https://github.com/XiaozhouCui/natours",
-    "description": "Deployed on AWS Elastic Beanstalk. This tourism booking website is a MVC backend application using SSR to call its own REST APIs. Apart from a deep dive into Node.js, Express and MongoDB, it also covers web security, Stripe payment, geo-spatial data and much more."
+    "description": "Deployed on AWS Elastic Beanstalk. This tour booking website is a MVC backend application using pug rendered pages to call its own REST APIs. Apart from a deep dive into Node.js, Express and MongoDB, it also covers web security, Stripe payment, geo-spatial data and much more."
   },
   {
     "title": "Email Client",
