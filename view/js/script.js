@@ -109,11 +109,12 @@ fetch("view/js/projects.json")
   .then(response => response.json())
   .then(projects => {
     // place_holder.innerHTML = null;
-    projects.map(p => {
+    projects.map((p, i) => {
+      var delay = (i + 1) % 3 == 0 ? 800 : (i + 2) % 3 == 0 ? 600 : 400;
       var card = document.createElement("div");
       card.className += "col-md-4";
       card.setAttribute("data-aos", "flip-left");
-      card.setAttribute("data-aos-delay", "400");
+      card.setAttribute("data-aos-delay", delay);
       card.innerHTML = `
         <div class="card my-3">
           <a target="_blank" href="${p.link}">
