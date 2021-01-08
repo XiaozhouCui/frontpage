@@ -24,6 +24,14 @@
   );
 })();
 
+// AOS animation
+AOS.init({
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 1500, // values from 0 to 3000, with step 50ms
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+});
+
 // The modal js starts
 
 function showModal() {
@@ -78,7 +86,7 @@ function AJAXform() {
     success: function (data) {
       if (data.status == "success") {
         modalSuccess();
-        document.getElementById("modaltext").innerHTML = "<p class='col-md-12'> Thank you " + data.name + ", your message has been sent successfully. I will contact you shortly.</p><button class='btn btn-secondary btn-lg' onclick='closeModal()'>OK</button>";
+        document.getElementById("modaltext").innerHTML = "<p class='col-md-12'> Thank you " + data.name + ", your message has been sent successfully.</p><button class='btn btn-secondary btn-lg' onclick='closeModal()'>OK</button>";
       }
       if (data.status == "error") {
         modalError();
@@ -103,7 +111,9 @@ fetch("view/js/projects.json")
     // place_holder.innerHTML = null;
     projects.map(p => {
       var card = document.createElement("div");
-      card.className += "col-md-4 slideanim";
+      card.className += "col-md-4";
+      card.setAttribute("data-aos", "flip-left");
+      card.setAttribute("data-aos-delay", "400");
       card.innerHTML = `
         <div class="card my-3">
           <a target="_blank" href="${p.link}">
@@ -117,10 +127,10 @@ fetch("view/js/projects.json")
           </div>
           <div class="list-group list-group-flush">
             <div class="list-group-item text-center">
-              <a target="_blank" href="${p.link}" class="card-link"><i class="fas fa-2x fa-link"></i></a>
-              ${p.repo ? `<a target="_blank" href="${p.repo}" class="card-link"><i class="fab fa-2x fa-github"></i></a>` : ""}
-              ${p["repo-b"] ? `<a target="_blank" href="${p["repo-b"]}" class="card-link"><i class="fab fa-2x fa-github"></i></a>` : ""}
-              ${p.docker ? `<a target="_blank" href="#" class="card-link"><i class="fab fa-2x fa-docker"></i></a>` : ""}
+              <a target="_blank" href="${p.link}" class="card-link" title="Page Link"><i class="fas fa-2x fa-link"></i></a>
+              ${p.repo ? `<a target="_blank" href="${p.repo}" class="card-link" title="Source Code"><i class="fab fa-2x fa-github"></i></a>` : ""}
+              ${p["repo-b"] ? `<a target="_blank" href="${p["repo-b"]}" class="card-link" title="Decoupled Backend"><i class="fab fa-2x fa-github"></i></a>` : ""}
+              ${p.docker ? `<a target="_blank" href="#" class="card-link"><i class="fab fa-2x fa-docker" title="Docker Hub Repo"></i></a>` : ""}
             </div>
           </div>
         </div>

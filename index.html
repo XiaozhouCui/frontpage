@@ -17,11 +17,15 @@
     <!-- Link to Font Awesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
 
-    <!-- Custom JavaScript for this page -->
-    <script src="view/js/script.js" defer></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- Custom JavaScript for this page -->
+    <script defer src="view/js/script.js" defer></script>
+    
     <!-- 3rd party slide animation effect -->
-    <script src="view/vendor/menucool/float-panel.js"></script>
+    <!-- <script src="view/vendor/menucool/float-panel.js"></script> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129344631-1"></script>
@@ -33,21 +37,6 @@
       gtag("js", new Date());
       gtag("config", "UA-129344631-1");
     </script>
-
-    <!-- Google Map JS -->
-    <!-- <script>
-      function initMap() {
-        var home = { lat: -27.5877, lng: 153.0607 };
-        var map1 = new google.maps.Map(document.getElementById("map"), {
-          zoom: 12,
-          center: home,
-        });
-        var marker = new google.maps.Marker({ position: home, map: map1 });
-      }
-    </script> -->
-
-    <!-- Google Map API -->
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFGd8DosO5qcow8V_cCAAP6SzypjyuqhU&callback=initMap"></script> -->
   </head>
 
   <body id="page-top">
@@ -98,7 +87,7 @@
 
     <!-- Header -->
     <header class="text-white" id="header">
-      <div class="container text-center">
+      <div class="container text-center" data-aos="fade-in">
         <h1 id="hi">Hi! I am Joe Cui</h1>
         <p class="lead">An experienced full-stack web developer</p>
       </div>
@@ -108,14 +97,14 @@
     <div id="content">
       <section id="about" class="odds">
         <div class="container">
-          <h2 class="text-center">About Me</h2>
+          <h2 class="text-center" data-aos="fade-up" data-aos-delay="1000">About Me</h2>
           <br />
-          <div class="row slideanim">
-            <div class="col-md-3">
+          <div class="row">
+            <div class="col-md-3" data-aos="fade-right" data-aos-delay="1200">
               <div id="profile"></div>
             </div>
             <div class="col-md-1"></div>
-            <div class="col-md-8">
+            <div class="col-md-8" data-aos="fade-left" data-aos-delay="1400">
               <p id="statement">I have more than 2 years of experience working as a full-stack web developer. My recent projects mainly focus on the MERN stack; my previous experience covers traditional LAMP stack. I am also familiar with Angular, Python and C#.</p>
               <p><strong>High lights:</strong></p>
               <ul>
@@ -132,18 +121,18 @@
             </div>
           </div>
           <br />
-          <div class="row slideanim text-center">
+          <div class="row text-center" data-aos="fade-up">
             <div class="col-md-3">
               <a class="btn btn-lg btn-primary" href="view/files/Joe - Web Developer.docx" download>Download Resume</a>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-8 extlinks">
-              <a href="https://www.linkedin.com/in/xiaozhou-cui-9744a535/" title="Linkedin">
+              <a href="https://www.linkedin.com/in/xiaozhou-cui-9744a535/" title="Linkedin" target="_blank">
                 <span>
                   <i class="fab fa-linkedin"></i>
                 </span>
               </a>
-              <a href="https://github.com/XiaozhouCui" title="GitHub">
+              <a href="https://github.com/XiaozhouCui" title="GitHub" target="_blank">
                 <span>
                   <i class="fab fa-github-square"></i>
                 </span>
@@ -155,40 +144,40 @@
 
       <section id="skills" class="evens">
         <div class="container">
-          <h2 class="text-center">Skills</h2>
+          <h2 class="text-center" data-aos="fade-up">Key Skills</h2>
           <br />
-          <div class="row text-center slideanim">
-            <div class="col-md-3">
+          <div class="row text-center">
+            <div class="col-md-3" data-aos="zoom-in">
               <i class="fab fa-react"></i>
               <h4>React</h4>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="zoom-in">
               <i class="fab fa-angular"></i>
               <h4>Angular</h4>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="zoom-in">
               <i class="fab fa-node"></i>
               <h4>Node.js</h4>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="zoom-in">
               <i class="fab fa-python"></i>
               <h4>Python</h4>
             </div>
           </div>
-          <div class="row text-center slideanim my-5">
-            <div class="col-md-3">
+          <div class="row text-center my-5">
+            <div class="col-md-3" data-aos="zoom-in">
               <i class="fab fa-php"></i>
               <h4>PHP</h4>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="zoom-in">
               <i class="fas fa-database"></i>
               <h4>SQL & MongoDB</h4>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="zoom-in">
               <i class="fab fa-docker"></i>
               <h4>Docker</h4>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="zoom-in">
               <i class="fab fa-aws"></i>
               <h4>AWS</h4>
             </div>
@@ -198,17 +187,17 @@
 
       <section id="projects" class="odds">
         <div class="container">
-          <h2 class="text-center">My Projects</h2>
+          <h2 class="text-center" data-aos="fade-up">My Projects</h2>
           <div class="row my-5" id="myprojects"></div>
         </div>
       </section>
 
       <section id="contact" class="evens">
         <div class="container">
-          <h2 class="text-center">Contact Me</h2>
+          <h2 class="text-center" data-aos="fade-up">Contact Me</h2>
           <br />
           <div class="row">
-            <div class="col-sm-5 slideanim">
+            <div class="col-sm-5" data-aos="zoom-in-right">
               <p>My contact details:</p>
               <p>
                 <span><i class="fas fa-map-marker-alt"></i></span> Sunnybank Hills, QLD 4109
@@ -222,9 +211,9 @@
               </p>
               <p>You can also leave a message in the form and click 'send' button.</p>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-7" data-aos="zoom-in-left">
               <form action="#" onsubmit="return false" id="webform" class="needs-validation" method="post" novalidate>
-                <div class="row slideanim">
+                <div class="row">
                   <div class="col-sm-6 form-group">
                     <label>Name:</label>
                     <input class="form-control" id="name" name="name" type="text" pattern="[A-Za-z ]+" required />
@@ -236,12 +225,12 @@
                     <div class="invalid-feedback">Please provide a valid email address.</div>
                   </div>
                 </div>
-                <div class="form-group slideanim">
+                <div class="form-group">
                   <label>Message:</label>
                   <textarea class="form-control" id="comments" name="message" rows="5" required></textarea>
                   <div class="invalid-feedback">Please leave a message.</div>
                 </div>
-                <div class="form-group slideanim">
+                <div class="form-group">
                   <button class="btn btn-primary float-right" onclick="AJAXform()">Send</button>
                 </div>
               </form>
@@ -250,7 +239,7 @@
 
           <!-- Google Map -->
           <!-- <div class="row">
-            <div class="col-md-12 slideanim">
+            <div class="col-md-12">
               <div id="map"></div>
             </div>
           </div> -->
@@ -266,7 +255,7 @@
             <i class="fas fa-angle-double-up slideanim"></i>
           </span>
         </a>
-        <p class="m-0 text-center text-white">Copyright &copy; www.joesdemosite.com 2020</p>
+        <p class="m-0 text-center text-white">Copyright &copy; www.joesdemosite.com 2021</p>
       </div>
       <!-- /.container -->
     </footer>

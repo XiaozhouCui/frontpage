@@ -1,4 +1,3 @@
-
 #header {
   padding: 180px 0 90px 0;
   background-color: tomato;
@@ -20,19 +19,22 @@ nav i {
 
 nav i:hover {
   transform: scale(1.3);
-  color:lightgray;
+  color: lightgray;
 }
 
 #content {
   background-image: url(../images/background.jpg);
   background-size: cover;
-  background-position: center;    
+  background-position: center;
   font-size: 1.2em;
 }
 
-
 section {
   padding: 150px 0;
+}
+
+.container h2 {
+  font-size: 3rem;
 }
 
 .container p.lead {
@@ -45,17 +47,17 @@ section {
 }
 
 .evens {
-  background-color: rgba(230, 230, 230, 0.85)
+  background-color: rgba(230, 230, 230, 0.85);
 }
 
 /*========= About ==========*/
-#about i{
+#about i {
   font-size: 3.5em;
   color: black;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
-#about i:hover{
+#about i:hover {
   color: tomato;
 }
 
@@ -67,25 +69,26 @@ section {
   width: 230px;
   height: 230px;
   margin: 40px auto;
-  background-image:url(../images/profile.jpg);
+  background-image: url(../images/profile.jpg);
   background-size: cover;
   background-position: center;
-  border-radius:150px;
+  border-radius: 150px;
   transition: 1s;
 }
 
-#profile:hover {    
+#profile:hover {
   transform: scale(1.3);
   border-radius: 10px;
 }
 
 #statement {
-  text-align: justify
+  text-align: justify;
 }
 
-#skills .fas, #skills .fab {
-  font-size:6em;
-  color:tomato;
+#skills .fas,
+#skills .fab {
+  font-size: 6em;
+  color: tomato;
   margin-bottom: 10px;
 }
 
@@ -123,8 +126,8 @@ section {
   background-color: tomato;
   overflow: hidden;
   width: 100%;
-  height:0;
-  transition: .5s ease;
+  height: 0;
+  transition: 0.5s ease;
 }
 
 .overlay .fas {
@@ -148,8 +151,6 @@ section {
   white-space: nowrap;
 }
 
-
-
 .caption {
   min-height: 8em;
   text-align: justify;
@@ -170,140 +171,132 @@ section {
 }
 
 #map {
-  border:2px solid cornflowerblue;
+  border: 2px solid cornflowerblue;
   border-radius: 15px;
-  height: 400px;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
- }
-
-#totop {
-  font-size: 3em; 
-  color: Tomato
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
 }
 
-#totop:hover {    
+#totop {
+  font-size: 3em;
+  color: Tomato;
+}
+
+#totop:hover {
   position: relative;
   animation: up;
-  animation-duration:0.5s;
-  animation-iteration-count:infinite;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
   animation-delay: 0;
 }
 
 @keyframes up {
-  0% {top:0px;} 
-  80% {top:-6px}
-  100% {top:0px;} 
-}
-
-/* ================ For Animation on Scroll ================ */
-.slideanim {
-  visibility:hidden;
-  visibility:visible\9;/*For old IE browsers IE6-8 */
-}
-.slideanim.slide {visibility: visible; animation:slide 1.5s;}
-.slideanim::after {
-  /* useful when its child elements are float:left; */
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@keyframes slide {
   0% {
-      opacity: 0;
-      transform: translateY(50%);
-  } 
+    top: 0px;
+  }
+  80% {
+    top: -6px;
+  }
   100% {
-      opacity: 1;
-      transform: translateY(0);
-  } 
+    top: 0px;
+  }
 }
-
 
 /* ============ The Modal starts here ============= */
 
 /* The Modal background */
 .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modalcontent {
-	position: relative;
-	background-color: #fefefe;
-	margin: auto;
-	padding: 0;
-	border: 1px solid #888;
-	width: 40%;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-	-webkit-animation-name: animatetop;
-	-webkit-animation-duration: 1s;
-	animation-name: animatetop;
-	animation-duration: 1s
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 1s;
+  animation-name: animatetop;
+  animation-duration: 1s;
 }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-	from {top:-300px; opacity:0} 
-	to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes animatetop {
-	from {top:-300px; opacity:0}
-	to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /* The Close Button */
 .close {
-	color: white;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modalheader {
-	padding: 16px 16px;
-	background-color: cornflowerblue;
-	color: white;
+  padding: 16px 16px;
+  background-color: cornflowerblue;
+  color: white;
 }
 
 .modalbody {
-	padding: 22px 16px;
+  padding: 22px 16px;
 }
 
 .modaltext {
-	font-size: 1.2em;
-	min-height: 150px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: space-around;
+  font-size: 1.2em;
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
 }
 
 .modalfooter {
-	padding: 20px 16px;
-	background-color: cornflowerblue;
-	color: white;
+  padding: 20px 16px;
+  background-color: cornflowerblue;
+  color: white;
 }
 /* ============== The Modal ends here ============== */
-
 
 /* ============== Media Query starts here ============== */
 
