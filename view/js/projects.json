@@ -1,13 +1,5 @@
 [
   {
-    "title": "My Forum",
-    "subtitle": "Next.js, Apollo, GraphQL, MERN",
-    "image": "portfolio.jpg",
-    "link": "https://next-gql-portfolio.herokuapp.com/",
-    "repo": "https://github.com/XiaozhouCui/nextjs-portfolio",
-    "description": "This full stack web app is my personal forum. You can login and leave a message in the forum, and reply to other user's message. Next.js is used for SSR and SSG. Apollo is used to handle GraphQL queries on frontend and backend."
-  },
-  {
     "title": "ProShop eCommerce",
     "subtitle": "MERN stacks and Redux",
     "image": "proshop.jpg",
@@ -17,15 +9,31 @@
   },
   {
     "title": "Natours",
-    "subtitle": "Node, Express, MongoDB, Pug, Stripe, Sendgrid, Mapbox",
+    "subtitle": "Node, Express, MongoDB, Pug, Stripe, Sendgrid, Mapbox, JWT",
     "image": "natours.jpg",
     "link": "https://natours-joe.herokuapp.com/",
     "repo": "https://github.com/XiaozhouCui/natours",
-    "description": "This tour booking system is a MVC backend application using Pug rendered pages to call its own REST APIs. Once logged in, users can book new tours, pay with credit cards, and rank their booked tours."
+    "description": "This backend Node.js project has a MVC structure. It provides dozens of API endpoints to perform various operations. Once logged in, users can upload photos, book new tours, pay with credit cards, and rank their booked tours."
+  },
+  {
+    "title": "My Forum",
+    "subtitle": "Next.js, Apollo, GraphQL, MERN",
+    "image": "portfolio.jpg",
+    "link": "https://next-gql-portfolio.herokuapp.com/",
+    "repo": "https://github.com/XiaozhouCui/nextjs-portfolio",
+    "description": "This full stack web app is my personal forum. You can login and leave a message in the forum, and reply to other user's message. Next.js is used for SSR and SSG. Apollo is used to handle GraphQL queries on frontend and backend."
+  },
+  {
+    "title": "My Messages",
+    "subtitle": "Angular, Node.js, Express, MongoDB, TypeScript, RxJS, JWT",
+    "image": "mymessages.jpg",
+    "link": "https://mymessages-mean.herokuapp.com/",
+    "repo": "https://github.com/XiaozhouCui/mean-mymessages",
+    "description": "This is a simple MEAN stack project. Users can register and login, and then post a message and upload an image. Only the post creators are authorised to edit or delete their own posts. Please note the uploaded image will not survive after the free Heroku host restarts."
   },
   {
     "title": "Email Client",
-    "subtitle": "Angular, TypeScript, RxJs, Services + DI",
+    "subtitle": "Angular, TypeScript, RxJS, OAuth",
     "image": "emailclient.jpg",
     "link": "https://emailclient-peach.vercel.app/",
     "repo": "https://github.com/XiaozhouCui/emailclient",

@@ -190,6 +190,18 @@ section {
   animation-delay: 0;
 }
 
+.card.project {
+  transition: all 0.3s ease-out;
+}
+
+.card.project:hover {
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  transform: translateY(-5px);
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
 @keyframes up {
   0% {
     top: 0px;

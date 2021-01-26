@@ -116,7 +116,7 @@ fetch("view/js/projects.json")
       card.setAttribute("data-aos", "flip-left");
       card.setAttribute("data-aos-delay", delay);
       card.innerHTML = `
-        <div class="card my-3">
+        <div class="card my-3 project">
           <a target="_blank" href="${p.link}">
             <img src="view/images/${p.image}" class="card-img-top" alt="${p.title}" />
           </a>
