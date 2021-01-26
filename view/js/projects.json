@@ -1,11 +1,11 @@
 [
   {
-    "title": "My Portfolio",
+    "title": "My Forum",
     "subtitle": "Next.js, Apollo, GraphQL, MERN",
     "image": "portfolio.jpg",
     "link": "https://next-gql-portfolio.herokuapp.com/",
     "repo": "https://github.com/XiaozhouCui/nextjs-portfolio",
-    "description": "This full stack web app will be my new portfolio site. You can login and leave a message in a forum, and reply to other user's message. Next.js is used for SSR and SSG. Apollo is used to handle GraphQL queries on frontend and backend."
+    "description": "This full stack web app is my personal forum. You can login and leave a message in the forum, and reply to other user's message. Next.js is used for SSR and SSG. Apollo is used to handle GraphQL queries on frontend and backend."
   },
   {
     "title": "ProShop eCommerce",
@@ -17,11 +17,11 @@
   },
   {
     "title": "Natours",
-    "subtitle": "Node, Express, MongoDB, pug, MVC",
+    "subtitle": "Node, Express, MongoDB, Pug, Stripe, Sendgrid, Mapbox",
     "image": "natours.jpg",
-    "link": "http://natours-env.eba-nf9b3ubt.ap-southeast-2.elasticbeanstalk.com/",
+    "link": "https://natours-joe.herokuapp.com/",
     "repo": "https://github.com/XiaozhouCui/natours",
-    "description": "Deployed on AWS Elastic Beanstalk. This tour booking website is a MVC backend application using pug rendered pages to call its own REST APIs. Apart from a deep dive into Node.js, Express and MongoDB, it also covers web security, Stripe payment, geo-spatial data and much more."
+    "description": "This tour booking system is a MVC backend application using Pug rendered pages to call its own REST APIs. Once logged in, users can book new tours, pay with credit cards, and rank their booked tours."
   },
   {
     "title": "Email Client",
